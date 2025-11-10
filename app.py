@@ -13,7 +13,11 @@ def index():
 def info():
     integrante = "Nicolas Felix Hrescak"
 
-    return integrante
+    dados = {
+        "Integrantes": integrante
+    }
+
+    return jsonify(dados)
 
 @APP.get("/metricas")
 def metricas():
